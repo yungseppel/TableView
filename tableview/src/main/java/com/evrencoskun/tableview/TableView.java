@@ -120,7 +120,7 @@ public class TableView extends FrameLayout implements ITableView {
     private boolean mIgnoreSelectionColors;
     private boolean mShowHorizontalSeparators = true;
     private boolean mShowVerticalSeparators = true;
-    private boolean mAllowClickInsideCell = false;
+    private boolean mAllowClickInsideCell = true;
     private boolean mAllowClickInsideRowHeader = false;
     private boolean mAllowClickInsideColumnHeader = false;
     private boolean mIsSortable;
@@ -446,6 +446,11 @@ public class TableView extends FrameLayout implements ITableView {
     public boolean isAllowClickInsideCell(){
         return mAllowClickInsideCell;
     }
+    
+    public void setAllowClickInsideCell(boolean value){
+        mAllowClickInsideCell = value;
+    }
+        
 
     @Override
     public boolean isSortable() {
