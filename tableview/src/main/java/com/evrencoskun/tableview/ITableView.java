@@ -65,6 +65,8 @@ public interface ITableView {
     boolean isShowVerticalSeparators();
 
     boolean isAllowClickInsideCell();
+    
+    void setAllowClickInsideCell(boolean value);
 
     boolean isSortable();
 
