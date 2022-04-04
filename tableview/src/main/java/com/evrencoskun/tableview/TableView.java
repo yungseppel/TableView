@@ -447,6 +447,7 @@ public class TableView extends FrameLayout implements ITableView {
         return mAllowClickInsideCell;
     }
     
+    @Override
     public void setAllowClickInsideCell(boolean value){
         mAllowClickInsideCell = value;
     }
